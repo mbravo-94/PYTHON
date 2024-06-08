@@ -51,3 +51,17 @@ print(contar_caracteres(string))
 # %%
 
 #Ejercicio 4: Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False
+
+def es_vocal(caracter: str) -> bool:
+    
+    vocales = ('a', 'e', 'i', 'o', 'u',)  
+    if caracter in vocales:
+        return True
+    else:
+        return False
+
+# Ejemplos de uso
+print(es_vocal('a'))  
+print(es_vocal('b')) 
+
+# %%
