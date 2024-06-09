@@ -65,3 +65,22 @@ print(es_vocal('a'))
 print(es_vocal('b')) 
 
 # %%
+
+#Escribir una función sum() y una función multip() que sumen y multipliquen respectivamente todos los números de una lista. 
+
+def sumar_lista (numeros:list) -> int:
+    return sum (numeros)
+lista = [1,2,3,4]
+print(sumar_lista(lista))
+# %%
+def multiplicar_lista(numeros) -> int:
+    resultado = 1
+    for numero in numeros:  # Iteramos sobre cada número en la lista 'numeros'
+        resultado *= numero  # Multiplicamos 'resultado' por el 'numero' actual
+    return resultado
+
+# Ejemplo de uso
+lista_numeros = [1, 2, 3, 4]
+print(multiplicar_lista(lista_numeros)) 
+
+# %%
