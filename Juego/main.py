@@ -7,6 +7,8 @@ pygame.init()
 # Configurando la pantalla
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Space Invaders')
+icon = pygame.image.load('space-invaders.png')
+pygame.display.set_icon(icon)
 
 # Game Loop
 running = True
@@ -16,7 +18,7 @@ while running:
             running = False
 
     screen.fill((0, 0, 0))  # Rellenar la pantalla con color negro
-    pygame.display.flip()   # Actualizar la pantalla
+    pygame.display.update()   # Actualizar la pantalla
 
 # Salir de Pygame
 pygame.quit()
